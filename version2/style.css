@@ -1,0 +1,107 @@
+#navigationBar {
+    display:flex;
+    background-color: #D5CBE7;
+    font-weight: 200;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    font-size:medium;
+    flex-wrap:wrap;
+}
+#title {
+    font-size:large;
+}
+
+.path {
+    background-color:#D5CBE7;
+}
+.collapse li, .grid-container {
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.inhrt-prop {
+    color: inherit;
+    font-family:inherit;
+    font-weight:inherit;
+    align-items: center;
+    font-size:inherit;
+}
+
+.visited,.frontvisited,.backvisited {
+    border: 1px solid rgb(175, 216, 248);
+    animation-name: visitedAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    padding: 0px;
+}
+@media (min-width: 992px){
+    .navbar li {
+        margin-left : 1em;
+        margin-right : 1em;
+    }
+}
+.btn-text {
+    width:fit-content;
+}
+@media (min-width: 992px) {
+    .btn-text {
+        font-size:1.01vw;
+    }
+}
+#container {
+    display: grid;
+    width: 100%;
+    padding-top:10px;
+    border-bottom:1px solid black;
+    border-left:1px solid black;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+.navbar-btn {
+    background-color:#71c7b3;
+}
+button {
+    height: auto;
+    width: auto;
+    min-height:15px;
+    min-width:15px;
+    background-color: white;
+    border-style:solid;
+    border-width:1px 1px 0px 0px;
+}
+
+@keyframes visitedAnimation {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: #eefa94;
+    }
+}
+.wall {
+    background-color:black;
+}
+.source {
+    background-color: #71c7b3;
+}
+.destination {
+    background-color: #e36f7d;
+}
+
+#algorithmDropdown {
+    flex-direction: row;
+    justify-content: center;
+}
