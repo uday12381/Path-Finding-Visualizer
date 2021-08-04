@@ -17,7 +17,7 @@ A Vanilla JS application that visualizes some of the well-known path-finding alg
   <li>Color change for Navbar and path</li>
 </ul>
 
-# Technologies Used
+# Technologies and Programming Languages Used
 <ul>
   <li>HTML</li>
   <li>CSS</li>
