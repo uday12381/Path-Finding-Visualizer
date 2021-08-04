@@ -3,10 +3,11 @@
 A Vanilla JS application that visualizes some of the well-known path-finding algorithms
 
 # Algorithms:
-Depth First Search <br>
-Breadth First Search <br>
-Bidirectional Search <br>
-
+<ol>
+<li>Depth First Search </li>
+<li>Breadth First Search </li>
+<li>Bidirectional Search </li>
+</ol>
 # Features
 <ol>
   <li>Color change for cells visited</li>
